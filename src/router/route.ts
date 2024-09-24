@@ -125,6 +125,21 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 					},
 				],
 			},
+			{
+				path: '/tool/gen',
+				name: 'toolGen',
+				component: () => import('/@/views/tool/gen/index.vue'),
+				meta: {
+					title: 'message.router.toolGen',
+					isLink: '',
+					isHide: false,
+					isKeepAlive: true,
+					isAffix: false,
+					isIframe: false,
+					roles: ['1', '3'],
+					icon: 'iconfont icon-xitongshezhi',
+				},
+			},
         ],
     },
 ];
